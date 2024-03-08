@@ -10,7 +10,7 @@ def get_data():
 
 @flow
 def subflow():
-    list_ = get_data() # memory leak is here
+    list_ = get_data() # memory leak is `list_`
     raise ValueError
 
 

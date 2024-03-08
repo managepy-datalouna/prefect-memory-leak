@@ -6,7 +6,7 @@ from prefect import flow, task, get_run_logger
 @task
 def get_data():
     time.sleep(5)
-    return list(range(1000000)) # memory leak is here
+    return list(range(1000000)) # memory leak is `return`
 
 
 @flow
