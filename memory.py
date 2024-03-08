@@ -15,7 +15,7 @@ def pipeline():
     logger = get_run_logger()
 
     for iteration in range(100):
-        get_data()
+        get_data.fn()
         logger.info(f'{iteration=}')
 
 
